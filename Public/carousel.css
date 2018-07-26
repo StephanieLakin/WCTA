@@ -10,15 +10,47 @@ body {
   /* NAVBAR
   ----------------------------------------------------*/
   nav {
-    padding-bottom: 80 em;
+    padding-bottom: 20 em;    
+    height:5rem ;
+    margin-top: 1rem;
   }
   img .Logo {
-    padding-right: 3rem;
-  }
+    padding-right: 3rem; 
+      
+  }  
 
-  .social  a {
-    box-shadow: 1px 1px .5px black !important;
-  }
+  /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  text-decoration: none;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
@@ -31,11 +63,16 @@ body {
   .carousel-caption {
     bottom: 3rem;
     z-index: 10;
+    position:fixed;    
   }
+  .overlay {     
+    position:absolute;
+  }
+
   
   /* Declare heights because of positioning of img element */
   .mySlides {
-    height: 32rem;
+    height: 15rem;
     background-color: #777;
   }
   .mySlides > img {
@@ -79,6 +116,27 @@ div #main {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+}
+/* Pop-Up Form
+----------------- */
+legend {
+  background-color: #000;
+  color: #fff;
+  padding: 3px 6px;
+}
+
+.output {
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+label {
+  font-size: .8rem;
+  display: block;
+  margin: 1rem 0 .2rem 0;
+}
+
+input:invalid:not(:focus) {
+  outline: 1px solid #f00;
 }
 
 /* Position the "next button" to the right */
@@ -146,11 +204,11 @@ div #main {
   to {opacity: 1}
 }
 
-div .container  {
-  background-image: url("resources/Kick.jpg");
+ #fill  {
+  background-image: url("resources/Kick2.jpg");
+  /*opacity: 0.6;*/
   background-color: #777;
-}
-  
+}  
   
   /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -191,15 +249,26 @@ div .container  {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding-top: 20em
-}
-#fill > img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%
-}
+  padding-top: 7.5rem; 
+  background-image: url("resources/Kick.jpg") no-repeat center center fixed;
+  background-color: #777;    
+  
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 100%;    
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;    
+    /* Set up positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }        
 
-
+#fill > img { 
+  padding-bottom: 10rem;
+  }
+   
 
   
   /* Featurettes
@@ -239,3 +308,11 @@ div .container  {
       margin-top: 7rem;
     }
   }
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+
+  
