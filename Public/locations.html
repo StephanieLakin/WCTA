@@ -9,12 +9,18 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
     crossorigin="anonymous">
+    <style>
+            /* Set the size of the div element that contains the map */
+            #map {
+              height: 400px;  /* The height is 400 pixels */
+              width: 100%;  /* The width is the width of the web page */
+             }
+          </style>
 
   <title>World Champion TKD</title>
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
 
   <!--JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -52,7 +58,7 @@
             Information
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="about.html">About Us</a>
+            <a class="dropdown-item" href="aboout.html">About Us</a>
             <a class="dropdown-item" href="locations.html">Locations</a>
             <a class="dropdown-item" href="history.html">WCTA History</a>
             <a class="dropdown-item" href="testimonials.html">Testimonials</a>
@@ -65,27 +71,33 @@
         </li>
       </ul>
       <div class="social">
-          <a target="_blank" title="follow me on facebook" href="http://www.facebook.com/WCTStrongsville/">
-              <img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0>
-          </a>
-          <a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/strongsvilletkd?lang=en">
-              <img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0>
-          </a>
-          <!--<a target="_blank" title="follow me on youtube" href="http://www.youtube.com/PLACEHOLDER">
-              <img alt="follow me on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0>
-          </a>-->
-          <a target="_blank" title="follow me on instagram" href="https://www.instagram.com/explore/locations/234292104/world-champion-tkd-academy-strongsville/?hl=en">
-              <img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0>
-          </a>                
-      </div>
+            <a target="_blank" title="follow me on facebook" href="http://www.facebook.com/WCTStrongsville/">
+                <img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0>
+            </a>
+            <a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/strongsvilletkd?lang=en">
+                <img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0>
+            </a>
+            <!--<a target="_blank" title="follow me on youtube" href="http://www.youtube.com/PLACEHOLDER">
+                <img alt="follow me on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0>
+            </a>-->
+            <a target="_blank" title="follow me on instagram" href="https://www.instagram.com/explore/locations/234292104/world-champion-tkd-academy-strongsville/?hl=en">
+                <img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0>
+            </a>                
+        </div>
     </div>
   </nav>
   <!-->Main</-->
-  <header>About</header>
-  
-    <div class="container">
+  <header>Locations</header>  
+    <div class="container" id="maps">
     </br>
-    <h1>About</h1>
+    <h1>Locations</h1>
+    <h5>Strongsville Location Directions:</h5>
+    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.94389045024!2d-81.83799124997681!3d41.28832560999323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830ea9b5ddab101%3A0xac4ae1e7ce2ff5cb!2sWORLD+CHAMPION+TKD+ACADEMY!5e0!3m2!1sen!2sus!4v1532571338832" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <h5>Brunswick Location Directions:</h5>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.388954480156!2d-81.84490054997899!3d41.23508471328587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830c0ca5e9d649f%3A0x3b0fffab0a2b1fdf!2sWORLD+CHAMPION+TKD+ACADEMY+-+BRUNSWICK!5e0!3m2!1sen!2sus!4v1532572059158" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <h5>Chardon Location Directions:</h5>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.374123175295!2d-81.21207554996462!3d41.58278849172168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88310a7f8f95ea7b%3A0x50fd9f94b46c69a3!2sWORLD+CHAMPION+TKD+ACADEMY-CHARDON!5e0!3m2!1sen!2sus!4v1532572215895" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>Chardon Location Directions</iframe>
+
   </div>
   
 
