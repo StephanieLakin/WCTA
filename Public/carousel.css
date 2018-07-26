@@ -22,7 +22,10 @@ body {
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
-    
+     /* Carousel base class */
+  .carousel-item {
+    margin-bottom: 8rem;
+  }
 
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
@@ -53,6 +56,11 @@ body {
   position: relative;  
 }
 
+div #main {
+  max-width: 100%;
+  position: relative;  
+  height: 22rem;
+}
 /* Hide the images by default
 .mySlides {
     display: none;
@@ -185,7 +193,7 @@ div .container  {
   overflow: hidden;
   padding-top: 20em
 }
-#fill img {
+#fill > img {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%
