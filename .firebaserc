@@ -1,5 +1,6 @@
 {
   "projects": {
-    "wcta": "wcta-575bc"
+    "wcta": "wcta-575bc",
+    "default": "wcta-575bc"
   }
 }
