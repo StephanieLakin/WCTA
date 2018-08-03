@@ -1,0 +1,41 @@
+[debug] [2018-08-02T03:50:50.266Z] ----------------------------------------------------------------------
+[debug] [2018-08-02T03:50:50.270Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Stephanie\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-08-02T03:50:50.270Z] CLI Version:   3.19.3
+[debug] [2018-08-02T03:50:50.271Z] Platform:      win32
+[debug] [2018-08-02T03:50:50.271Z] Node Version:  v10.1.0
+[debug] [2018-08-02T03:50:50.272Z] Time:          Wed Aug 01 2018 23:50:50 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-02T03:50:50.272Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-02T03:50:50.328Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-02T03:50:50.330Z] > authorizing via signed-in user
+[debug] [2018-08-02T03:50:50.334Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-02T03:50:50.335Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/UsygoQZmnz7MBTG9clYd07mKgpbbQg8DCtiIZNIsK6g',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Aug 01 2018 23:50:50 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-02T03:50:51.030Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-02T03:50:51.142Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/wcta-575bc  
+  
+ Wed Aug 01 2018 23:50:51 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-02T03:50:51.800Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-02T03:50:51.800Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/wcta-575bc/tokens  
+  
+ Wed Aug 01 2018 23:50:51 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-02T03:50:52.368Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-02T03:50:52.369Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/wcta-575bc  
+  
+ Wed Aug 01 2018 23:50:52 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-02T03:50:52.627Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Git\WCTA'...
+[info] 
+[debug] [2018-08-02T03:50:52.644Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/199639268482/clients/_:getWebAppConfig  
+  
+ Wed Aug 01 2018 23:50:52 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-02T03:50:52.944Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+

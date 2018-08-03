@@ -14,10 +14,13 @@ body {
     height:5rem ;
     margin-top: 1rem;
   }
-  img .Logo {
-    padding-right: 3rem; 
-      
+   #Logo {
+    padding-right: 1rem; 
+    transition: transform .2s;      
   }  
+   #Logo:hover {
+    transform: scale(1.05);
+  }
 
   /* Style all font awesome icons */
 .fa {
@@ -57,17 +60,16 @@ body {
      /* Carousel base class */
   .carousel-item {
     margin-bottom: 8rem;
+    margin-top:5rem;
   }
 
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
     bottom: 3rem;
-    z-index: 10;
-    position:fixed;    
+    
+    position:absolute;    
   }
-  .overlay {     
-    position:absolute;
-  }
+ 
 
   
   /* Declare heights because of positioning of img element */
@@ -185,8 +187,21 @@ input:invalid:not(:focus) {
 .active, .dot:hover {
   background-color: #717171;
 }
+/*Zoom on Hover
+----------------------*/
+.rounded-circle {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  padding-top: 2rem;
+}
 
-/* Fading animation */
+.rounded-circle:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+/* Fading animation 
+----------------------*/
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -209,11 +224,29 @@ input:invalid:not(:focus) {
   /*opacity: 0.6;*/
   background-color: #777;
 }  
+/* kmrData
+------------------*/
+ .main  {
+  background-color: #000;
+  background-image: url("resources/tall.jpg");
+  margin-top: 8rem;
+  background-repeat: no-repeat;
+  height: 180rem;
+}
+
   
   /* MARKETING CONTENT
   -------------------------------------------------- */
   
   /* Center align the text within the three columns below the carousel */
+  .marketing  #kmr{
+    margin: 0 auto;
+    width:100%;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  
+  
   .marketing .col-lg-4 {
     margin-top:5rem;
     margin-bottom: 1.5rem;
@@ -221,7 +254,18 @@ input:invalid:not(:focus) {
   }
   .marketing h2 {
     font-weight: 400;
+    padding-top: 2rem;
   }
+  .marketing h1 {
+    width: auto;
+    margin: auto;
+  }
+
+.section-title{
+  text-align: center !important;
+  
+}
+
   .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
@@ -230,7 +274,13 @@ input:invalid:not(:focus) {
     background-color: #ea632d  !important;
     color: black !important;
     border: none !important;
-    box-shadow: 1px 1px .5px rgb(22, 19, 19);
+    box-shadow: 1px 1px .5px rgb(22, 19, 19); 
+    transition: transform .2s;
+  }
+
+  .btn:hover {
+    transform: scale(1.1);
+    background-color: #f77b4a  !important;
   }
 
  .carousel-caption  h1 {
