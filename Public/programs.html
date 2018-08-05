@@ -5,6 +5,11 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="expires" content="0" />
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="expires" content="-1" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
   <link rel="icon" type="image/png" href="resources/favicon-16x16.png" sizes="16x16" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
@@ -12,14 +17,26 @@
   <link rel="stylesheet" type="text/css" href="carousel.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>World Champion TKD</title>
+ 
   <script>
-      function html(img) {
-       var iframe = document.getElementById("frame");
+      function html(img ,src="resources/littleChamps.jpg") {
+       var iframe = document.getElementById("frame2");
 
        img.setAttribute("class", "hidden");
        iframe.setAttribute("class", "shown");
      }
-   </script>
+   
+       /*function html(img, src="resources/teenAdult.jfif") {
+         var iframe = document.getElementById("frame3");
+  
+         img.setAttribute("class", "hidden");
+         iframe.setAttribute("class", "shown");
+       }*/
+     </script>
+ 
+
+
+
 </head>
 
 <body>
@@ -90,27 +107,30 @@
     <h1>Available Programs</h1>
 
     <div class="row">
+
       <div class="column">
-        <img src="resources/littleChamps.jpg" class="shown" id="image" onClick="html(this);" style="width:100%">
-        <iframe id="frame" name="page"width="500" height="315" src="https://www.youtube.com/embed/SZ1xRT9CIi8" frameborder="0" class="hidden"></iframe>
+          <img src="resources/littleChamps.jpg" class="shown" id="image" onClick="html(this);" style="width:100%">
+        <iframe id="frame2" name="page"  width="500" height="315" src="https://www.youtube.com/embed/SZ1xRT9CIi8"  frameborder="0" class="hidden"></iframe>
 
         <div class="top-left">Little Champions: 4-6 Yrs</div>
       </div>
+
       <div class="column">
         <img src="resources/champKids.jfif" alt="Forest" style="width:100%">
         <div class="top-left">Champion Kids</div>
       </div>
       <div class="column">
-        <img src="resources/teenAdult.jfif"  class="shown" id="image" onClick="html(this);" style="width:100%">
-        <iframe id="frame" name="page"width="500" height="315" src="https://www.youtube.com/embed/vNsu692vBWg" frameborder="0" class="hidden"></iframe>
+        <img src="resources/teenAdult.jfif" class="shown" id="image"  style="width:100%">
+       <!-- <iframe id="frame3" name="page"  width="500" height="315" src="https://www.youtube.com/embed/vNsu692vBWg"  frameborder="0" class="hidden"></iframe>-->
 
         <div class="top-left">Teens and Adults:13 Yrs and Up</div>
       </div>
+
     </div>
     <div class="row">
       <div class="column">
-   <img src="resources/compTeam.jfif" class="shown" id="image" onClick="html(this);" style="width:100%">
-        <iframe id="frame" name="page"width="500" height="315" src="https://www.youtube.com/embed/K7tZpxOiKCk" frameborder="0" class="hidden"></iframe>
+       <img src="resources/compTeam.jfif" class="shown" id="image"  style="width:100%">
+        <!--<iframe id="frame" name="page"  width="500" height="315" src="https://www.youtube.com/embed/K7tZpxOiKCk" frameborder="0" class="hidden"></iframe>-->
         <div class="top-left">Competition Team</div></a>
       </div>
       <div class="column">
@@ -128,6 +148,26 @@
   </div>
   </div>
   </div>
-</body>
+<!-- FOOTER -->
+<footer class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>&copy; 2017-2018 WCTA &middot;
+      
+    </p>
+  </footer>
+  </main>
 
+  <!-- Bootstrap core JavaScript
+       ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="../../assets/js/vendor/holder.min.js"></script>
+</body>
 </html>

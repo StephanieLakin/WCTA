@@ -4,7 +4,7 @@
 
 
 body {   
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
     color: #5a5a5a;
   }
   /* NAVBAR
@@ -230,7 +230,7 @@ input:invalid:not(:focus) {
   /*background-image: url("resources/kmrTall.jpg");*/
   margin-top: 8rem;
   background-repeat: no-repeat;
-  height: 180rem;
+  height: 120rem;
 
 }
 #tall {
@@ -314,6 +314,24 @@ input:invalid:not(:focus) {
   .carousel-caption  h3 span {
     color:white;
   }
+  .featurette-image{
+    padding-right: 5rem;
+    clear: left;
+  }
+   #tie {
+    float: right;
+  }
+
+
+.lead {
+    color: rgb(177, 73, 3);
+    font-size: 1.5rem;
+  }
+
+  .lead2 {
+    color: rgb(177, 73, 3);
+    font-size: 1.0rem;
+  }
 /* Events
 ---------------------------*/
  #fill {
@@ -351,9 +369,21 @@ input:invalid:not(:focus) {
   
   /* Featurettes
   ------------------------- */
+#aboutCont{
+  background-color: #5a5a5a;
+ }
+
+ .featurette-image {
+   padding: 1rem !important;
+   width: 300;
+   height:150;
+ }
+
+
   
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    padding-right: 5rem;
   }
   
   /* Thin out the marketing headings */
@@ -404,7 +434,7 @@ input:invalid:not(:focus) {
 
 #programs {
   background-color: #5a5a5a;
-  height:180rem;
+  height:100rem;
   text-align: center !important;
   
   padding-top: 8rem;
