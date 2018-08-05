@@ -14,6 +14,10 @@ body {
     height:5rem ;
     margin-top: 1rem;
   }
+.navbar {
+  background-color: #000 !important;
+}
+
    #Logo {
     padding-right: 1rem; 
     transition: transform .2s;      
@@ -218,20 +222,39 @@ input:invalid:not(:focus) {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
- #fill  {
-  background-image: url("resources/Kick2.jpg");
-  /*opacity: 0.6;*/
-  background-color: #777;
-}  
+ 
 /* kmrData
 ------------------*/
  .main  {
   background-color: #000;
-  background-image: url("resources/tall.jpg");
+  /*background-image: url("resources/kmrTall.jpg");*/
   margin-top: 8rem;
   background-repeat: no-repeat;
   height: 180rem;
+
+}
+#tall {
+  height: 85rem;
+  z-index: 1; 
+  position: relative;
+  padding-right: 10rem;
+  padding-left: 5rem;  
+}
+  #KmrTitle h1 {
+ padding-top: 8rem;  
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#RyuVid iframe {   
+  clear: both;
+  position:relative;
+  padding-top:8rem;
+  height:50%;
+  width: 75%;
+  text-align: center;
+  
 }
 
   
@@ -239,7 +262,7 @@ input:invalid:not(:focus) {
   -------------------------------------------------- */
   
   /* Center align the text within the three columns below the carousel */
-  .marketing  #kmr{
+  .marketing  #kmr {
     margin: 0 auto;
     width:100%;
     text-align: center;
@@ -262,8 +285,7 @@ input:invalid:not(:focus) {
   }
 
 .section-title{
-  text-align: center !important;
-  
+  text-align: center !important;  
 }
 
   .marketing .col-lg-4 p {
@@ -313,12 +335,18 @@ input:invalid:not(:focus) {
     position: absolute;
     top: 0;
     left: 0;
-  }        
-
-#fill > img { 
-  padding-bottom: 10rem;
-  }
+  }       
+  
+  #fill  {
+    background-image: url("resources/Kicks.jpg");  
+    background-color: #777;  
+  }  
+  
+  #fill img {
+    border: solid 1rem black;
    
+    padding-bottom: 0;
+  }
 
   
   /* Featurettes
@@ -335,6 +363,100 @@ input:invalid:not(:focus) {
     letter-spacing: -.05rem;
   }
 
+   /* Locations */
+
+   .maps {
+    height: 50rem;
+    background-color: #5a5a5a;
+    color: #f2f2f2;
+   }
+
+  .maps h1{
+    text-align: center;
+  }
+
+#maps1 { 
+  position: absolute;
+  height: 0 auto;
+  margin-top: 8rem;
+  margin-bottom: 10%;
+  margin-left: 25%;   
+  }
+  
+#maps2 {  
+  position: absolute;
+  height:0 auto;
+  margin-bottom: 5%;
+  margin-top: 8rem;
+  margin-left: 25%;  
+}
+  
+#maps3 { 
+  position: absolute;
+  height:0 auto;  
+  margin-bottom:5%;
+  margin-top: 0;
+  margin-left: 25%;
+}
+
+/*   Programs
+----------------------*/
+
+#programs {
+  background-color: #5a5a5a;
+  height:180rem;
+  text-align: center !important;
+  
+  padding-top: 8rem;
+  color: #f2f2f2
+}
+
+#prog h1 {
+  float: right; 
+  margin: o auto;
+}
+
+.column {
+  float: right;  
+  width: 33.33%;
+  padding: 5rem;
+  
+ 
+ 
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* video onclick*/
+
+.hidden {
+  display: None;
+}
+
+.shown {
+  display: "";
+  transition: transform .2s; 
+}
+.shown:hover {
+  transform: scale(1.05);
+  opacity:0.5;
+}
+
+
+
+/*   Testimonials
+----------------------*
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+
+
+
+  
   
   
   /* RESPONSIVE CSS
@@ -365,4 +487,15 @@ input:invalid:not(:focus) {
     }
   }
 
-  
+  @media only screen and (max-width: 320px) {
+
+    body { 
+       font-size: 2em; 
+    }
+ 
+ }
+ @media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}

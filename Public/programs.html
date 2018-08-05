@@ -9,13 +9,21 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
     crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="carousel.css"/>
+  <link rel="stylesheet" type="text/css" href="carousel.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>World Champion TKD</title>
+  <script>
+      function html(img) {
+       var iframe = document.getElementById("frame");
+
+       img.setAttribute("class", "hidden");
+       iframe.setAttribute("class", "shown");
+     }
+   </script>
 </head>
 
 <body>
-  
+
 
   <!--JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -29,9 +37,13 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
     <a href="index.html"></a>
-    <img src="resources/Logo.png">
+    <a href="index.html">
+      <img id="Logo" src="resources/Logo.png">
     </a>
-    <a class="navbar-brand" href="index.html">&nbsp World Champion TKD Academ<h4>&nbsp World Champion TKD Academy</h4>y</a>
+    </a>
+    <a class="navbar-brand" href="index.html">
+      <h4>&nbsp World Champion TKD Academy</h4>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -39,7 +51,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-       <!-- <li>
+        <!-- <li>
           <a class="nav-link" href="index.html">Home
             <span class="sr-only">(current)</span>
           </a>
@@ -65,24 +77,57 @@
           <a class="nav-link disabled" href="memberLogin.html">Member Login</a>
         </li>
       </ul>
-       <!--Social Media-->
-       <div class="social">
-          <a href="http://www.facebook.com/WCTStrongsville/" class="fa fa-facebook"></a>
-          <a href="http://www.twitter.com/strongsvilletkd?lang=en" class="fa fa-twitter"></a>
-          <a href="https://www.instagram.com/explore/locations/234292104/world-champion-tkd-academy-strongsville/?hl=en" class="fa fa-instagram"></a>      
+      <!--Social Media-->
+      <div class="social">
+        <a href="http://www.facebook.com/WCTStrongsville/" class="fa fa-facebook"></a>
+        <a href="http://www.twitter.com/strongsvilletkd?lang=en" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/explore/locations/234292104/world-champion-tkd-academy-strongsville/?hl=en" class="fa fa-instagram"></a>
       </div>
     </div>
   </nav>
-  <!-->Main</-->
-  <header></header>
-  
-    <div class="container">
-    </br> </br> </br>
-    <h1>programs</h1>
+  <!--Main-->
+  <div class="container-fluid" id="programs" col-md-12>
+    <h1>Available Programs</h1>
+
+    <div class="row">
+      <div class="column">
+        <img src="resources/littleChamps.jpg" class="shown" id="image" onClick="html(this);" style="width:100%">
+        <iframe id="frame" name="page"width="500" height="315" src="https://www.youtube.com/embed/SZ1xRT9CIi8" frameborder="0" class="hidden"></iframe>
+
+        <div class="top-left">Little Champions: 4-6 Yrs</div>
+      </div>
+      <div class="column">
+        <img src="resources/champKids.jfif" alt="Forest" style="width:100%">
+        <div class="top-left">Champion Kids</div>
+      </div>
+      <div class="column">
+        <img src="resources/teenAdult.jfif"  class="shown" id="image" onClick="html(this);" style="width:100%">
+        <iframe id="frame" name="page"width="500" height="315" src="https://www.youtube.com/embed/vNsu692vBWg" frameborder="0" class="hidden"></iframe>
+
+        <div class="top-left">Teens and Adults:13 Yrs and Up</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+   <img src="resources/compTeam.jfif" class="shown" id="image" onClick="html(this);" style="width:100%">
+        <iframe id="frame" name="page"width="500" height="315" src="https://www.youtube.com/embed/K7tZpxOiKCk" frameborder="0" class="hidden"></iframe>
+        <div class="top-left">Competition Team</div></a>
+      </div>
+      <div class="column">
+        <img src="resources/demoTeam.jpg" alt="Forest" style="width:100%">
+        <div class="top-left">Air Kickers (Demo Team)</div>
+      </div>
+      <div class="column">
+        <img src="resources/private.jfif" alt="Mountains" style="width:100%">
+        <div class="top-left">Private Lessons (Appointment Only)</div>
+      </div>
+    </div>
   </div>
-  
-
-
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
 </body>
 
 </html>
