@@ -16,19 +16,18 @@
 <body>
 
 
-<fieldset>
-        <legend>Enter contact email</legend>
-    
-        <label for="primary">Primary address:</label>
-        <input type="email" placeholder="drone@globex.com"
-               pattern=".+@globex.com" size="30" required
-               title="Must be a globex.com email address" />
-    
-        <label for="secondary">Secondary addresses:</label>
-        <input type="email" placeholder="foo@this.com, bar@that.com"
-               size="35" multiple
-               title="Zero or more addresses, separated with ','" />
-    
-    </fieldset>
+    <form method="post" id="register">
+        <h2>Register for Our Introductory Program</h2>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" 
+           placeholder="First and Last Name" required>
+        <label for="email">Email address</label>
+        <input type="email" name="email" id="email" 
+           placeholder="neo@example.com" required>
+        <label for="tel">Telephone</label>
+        <input type="tel" name="tel" id="tel" 
+           placeholder="(555) 555 5555" required>
+        <input type="submit" value="Sign up">
+     </form>
 </body>
 </html>   
