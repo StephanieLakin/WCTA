@@ -2,32 +2,103 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="resources/favicon-16x16.png" sizes="16x16" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="carousel.css"/>
-
-    <title>World Champion TKD</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="resources/favicon-16x16.png" sizes="16x16" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="carousel.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>World Champion TKD</title>
 </head>
 <body>
+  
+
+  <!--JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
 
 
-    <form method="post" id="register">
-        <h2>Register for Our Introductory Program</h2>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" 
-           placeholder="First and Last Name" required>
-        <label for="email">Email address</label>
-        <input type="email" name="email" id="email" 
-           placeholder="neo@example.com" required>
-        <label for="tel">Telephone</label>
-        <input type="tel" name="tel" id="tel" 
-           placeholder="(555) 555 5555" required>
-        <input type="submit" value="Sign up">
-     </form>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a href="index.html"></a>
+    <a href="index.html"><img id="Logo" src="resources/Logo.png" style="max-width:100%;height:auto;"></a>
+    </a>
+    <a class="navbar-brand" href="index.html"><h4>&nbsp World Champion TKD Academy</h4></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+   <!-- <li>
+          <a class="nav-link" href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Information
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="about.html">About Us</a>
+            <a class="dropdown-item" href="locations.html">Locations</a>
+            <a class="dropdown-item" href="history.html">WCTA History</a>
+            <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="programs.html">Available Programs</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="memberLogin.html">Member Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>          
+          </li>
+        <li><a class="nav-link" href="tel:440-878-5555">Contact Us Today: (440) 878-5555</a></li>
+      </ul>
+     <!--Social Media-->
+      <div class="social">
+          <a href="http://www.facebook.com/WCTStrongsville/" class="fa fa-facebook"></a>
+          <a href="http://www.twitter.com/strongsvilletkd?lang=en" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/explore/locations/234292104/world-champion-tkd-academy-strongsville/?hl=en" class="fa fa-instagram"></a>      
+      </div>
+    </div>
+  </nav>
+<div role="main" id="main">
+   <iframe id="Form" src="https://docs.google.com/forms/d/e/1FAIpQLSewhNoV_W2J-OhpY4KNjCIxiDf5_ig-tdHouI3xyoFCIWDnug/viewform?embedded=true"
+        width="700" height="520" frameborder="0" marginheight="0" marginwidth="0" action="POST">Loading...</iframe>      
+</div>
+    <!--<div class="signUp" width="300px">
+        <form id="register"action="mailto:stephanielakin13@gmail.com" method="post" enctype="multipart/form-data">
+            <h2>Register for Our Introductory Program</h2>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="First and Last Name" required>
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="neo@example.com" required>
+            <label for="tel">Telephone</label>
+            <input type="tel" name="tel" id="tel" placeholder="(555) 555 5555" required>
+            <label for="location">Preferred Location</label>
+            <input type="text" name="location" id="location" placeholder="Strongsville or Chardon" required>
+            <label for="how">How did you hear about us?</label>
+            <input type="text" name="how" id="how" placeholder="" required>
+            <label for="Message">Additional Message</label>         
+            <textarea name="message" id="Message" placeholder="Message" required cols="40" rows="5"></textarea>
+        </br></br>
+            <input type="submit" value="Send">
+        </form>
+    </div>-->
 </body>
-</html>   
+
+</html>
