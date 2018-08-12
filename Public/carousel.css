@@ -18,6 +18,28 @@ body {
   background-color: #000 !important;
 }
 
+.navbar-brand h4 {
+  font-size: 2.5vw;
+}
+.dropdown-menu a {
+  font-size: 1vw;
+}
+.nav-link {
+  font-size: 1vw;
+  position: relative;
+}
+.carousel-caption  h1 {
+  font-size: 2vw;
+}
+.carousel-caption  h3 {
+  font-size: 1.5vw;
+}
+
+
+collapse {
+  font-size: 1.5 vw;
+}
+
    #Logo {
     padding-right: 1rem; 
     transition: transform .2s;      
@@ -247,14 +269,15 @@ input:invalid:not(:focus) {
   text-align: center;
 }
 
+
+
 #RyuVid iframe {   
   clear: both;
-  position:relative;
+  position: absolute;;
   padding-top:8rem;
   height:50%;
   width: 75%;
-  text-align: center;
-  
+  text-align: center;   
 }
 
   
@@ -537,3 +560,11 @@ gallery{
 }@media only screen and (max-width: 1440px) {
   .social { 
   display: none !important; }}
+  
+@media only screen and (max-width:1440px ){
+  .dropdown-menu a {
+    font-size: 1vw;
+    color: #000;
+  }
+
+}
